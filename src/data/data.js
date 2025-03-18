@@ -137,10 +137,11 @@ export const projectsData = [
 ];
 
 export const headerData = [
-  { id: 1, title: "Home", to: "/" },
-  { id: 2, title: "Projects", to: "/projects" },
-  { id: 3, title: "About", to: "/about" },
-  { id: 4, title: "Contact", to: "/contact" },
+  { id: 1, title: "Inicio", to: "/" },
+  { id: 2, title: "Nosotros", to: "/about" },
+  { id: 3, title: "Tipología", to: "/projects" },
+  { id: 4, title: "Tour Virtual", to: "/virtual-tours" },
+  { id: 5, title: "Contacto", to: "/contact" },
 ];
 
 export const clientTestimonialsData = [

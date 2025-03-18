@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { About, Contact, Home, NotFound, Projects, Single } from "./pages";
+import { About, Contact, Home, NotFound, Projects, Single, VirtualTours } from "./pages";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,8 +12,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/virtual-tours" element={<VirtualTours />} />
         <Route path="/contact" element={<Contact />} />
         <Route path={"projects/:id"} element={<Single />} />
         <Route path="*" element={<NotFound />} />
