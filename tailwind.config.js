@@ -5,10 +5,10 @@ export default {
     extend: {
       colors: {
         white: "#fff",
-        primary: "#DCAC36",
-        secondary: "#0D0D0D",
+        primary: "#142E4B",
+        secondary: "#8DA59D",
         gray: "rgba(255, 255, 255, 0.75)",
-        lightGray: "#161616",
+        lightGray: "#173329",
       },
     },
   },

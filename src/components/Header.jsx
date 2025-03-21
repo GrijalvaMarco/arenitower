@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { headerData } from "../data/data";
 import { MdOutlineDehaze, MdClose } from "react-icons/md";
 
-import logo from "/logo.png";
+import logo from "/logotipo160.png";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -41,12 +41,12 @@ function Header() {
       className={`h-[80px] text-white w-full fixed z-50 flex items-center ${
         !isScrolled && "border-b"
       }  border-[#b9bbbd] ${
-        isScrolled || isActive ? "bg-secondary" : "md:bg-transparent"
+        isScrolled || isActive ? "bg-primary" : "md:bg-transparent"
       }`}>
       <div className="container relative mx-auto px-[20px] flex items-center justify-between">
         <div>
           <Link to={"/"}>
-            <img src={logo} alt="new capital logo" className="w-[60px]" />
+            <img src={logo} alt="new capital logo" className="w-[80px]" />
           </Link>
         </div>
         <ul
@@ -60,7 +60,7 @@ function Header() {
                 <NavLink
                   to={l.to}
                   onClick={handleCloseHeader}
-                  className="relative hover:text-primary transition-all ease-in-out">
+                  className="relative hover:text-secondary transition-all ease-in-out">
                   {l.title}
                 </NavLink>
               </li>

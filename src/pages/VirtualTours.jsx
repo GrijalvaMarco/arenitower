@@ -1,4 +1,4 @@
-import VirtualToursSection from "../components/virtualTour/virtualToursSection";
+import VirtualToursSection from "../components/virtualTour/VirtualToursSection";
 
 function VirtualTours() {
   return (
