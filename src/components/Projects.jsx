@@ -5,7 +5,7 @@ import Container from "./Container";
 
 function Projects() {
   return (
-    <div className="bg-lightGray text-white py-[80px]">
+    <div className="text-white py-[80px]">
       <Container>
         <div className="font-bold">
           <h3 className="text-center uppercase font-bold sm:text-xl text-lg">
@@ -19,7 +19,7 @@ function Projects() {
                   data-aos="fade-up"
                   data-aos-duration="3000"
                   key={p.id}
-                  className="bg-[#262626] hover:bg-[#333333] md:w-[calc(50%-20px)] w-full md:min-h-[500px] min-h-[400px]">
+                  className="bg-lightGray hover:bg-[#333333] md:w-[calc(50%-20px)] w-full md:min-h-[500px] min-h-[400px]">
                   <img
                     src={p.image}
                     alt={p.description}

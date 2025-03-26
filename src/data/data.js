@@ -137,10 +137,11 @@ export const projectsData = [
 ];
 
 export const headerData = [
-  { id: 1, title: "Home", to: "/" },
-  { id: 2, title: "Projects", to: "/projects" },
-  { id: 3, title: "About", to: "/about" },
-  { id: 4, title: "Contact", to: "/contact" },
+  { id: 1, title: "Inicio", to: "/" },
+  { id: 2, title: "Nosotros", to: "/about" },
+  { id: 3, title: "Tipología", to: "/projects" },
+  { id: 4, title: "Tour Virtual", to: "/virtual-tours" },
+  { id: 5, title: "Contacto", to: "/contact" },
 ];
 
 export const clientTestimonialsData = [
@@ -176,7 +177,7 @@ export const aboutUsData = [
     image: experienceIcon,
     description:
       "Based on our extensive experience and resources, we provide sincere consultancy you can depend on to help you with your investment and property buying decisions.",
-    bgColor: "#222222",
+    bgColor: "#173329",
   },
   {
     id: 2,
@@ -184,7 +185,7 @@ export const aboutUsData = [
     image: trustIcon,
     description:
       "We have built a reputation through meaningful communication and honesty with our clients. We are trusted to fulfill promises and take care of our clients’ concerns.",
-    bgColor: "#141414",
+    bgColor: "#8DA59D",
   },
 
   {
@@ -193,7 +194,7 @@ export const aboutUsData = [
     image: varietyIcon,
     description:
       "We specialize in various projects that offer all types of units such as apartments, penthouses, villas, commercial, administrative, and medical units.",
-    bgColor: "#222222",
+    bgColor: "#173329",
   },
 ];
 
@@ -613,4 +614,91 @@ export const newCairoData = [
     discount: "6%",
     Installment: 9,
   },
+];
+
+export const tipologyData = [
+  {
+    name: "Modelo A1",
+    shortName: "A1",
+    type: "A",
+    image: "",
+    area: 50,
+    distributionArea: {
+      privateArea: 100,
+      coveredTerrace: 6,
+      storage: 6,
+    },
+    specifications: ["1 Recámaras", "1 Baño", "2 Cajones de estacionamiento", "Sala de TV"],
+    virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+  },
+  {
+    name: "Modelo C1",
+    shortName: "C1",
+    type: "B",
+    image: "",
+    area: 70,
+    distributionArea: {
+      privateArea: 100,
+      coveredTerrace: 6,
+      storage: 6,
+    },
+    specifications: ["2 Recámaras", "2 Baños", "2 Cajones de estacionamiento", "Sala de TV"],
+    virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+  },
+  {
+    name: "Modelo F1",
+    shortName: "F1",
+    type: "B",
+    image: "",
+    area: 80,
+    distributionArea: {
+      privateArea: 100,
+      coveredTerrace: 6,
+      storage: 6,
+    },
+    specifications: ["3 Recámaras", "2.5 Baños", "2 Cajones de estacionamiento", "Sala de TV"],
+    virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+  },
+  {
+    name: "Modelo H2",
+    shortName: "H2",
+    type: "C",
+    image: "",
+    area: 100,
+    distributionArea: {
+      privateArea: 100,
+      coveredTerrace: 6,
+      storage: 6,
+    },
+    specifications: ["3 Recámaras", "2.5 Baños", "2 Cajones de estacionamiento", "Sala de TV"],
+    virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+  },
+  {
+    name: "Modelo L2",
+    shortName: "L2",
+    type: "C",
+    image: "",
+    area: 120,
+    distributionArea: {
+      privateArea: 100,
+      coveredTerrace: 6,
+      storage: 6,
+    },
+    specifications: ["4 Recámaras"],
+    virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+  },
+  {
+    name: "Modelo Q2",
+    shortName: "Q2",
+    type: "C",
+    image: "",
+    area: 140,
+    distributionArea: {
+      privateArea: 100,
+      coveredTerrace: 6,
+      storage: 6,
+    },
+    specifications: ["4 Recámaras"],
+    virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+  }
 ];
