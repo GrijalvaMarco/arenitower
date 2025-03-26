@@ -1,12 +1,12 @@
-import { clientTestimonialsData } from "../data/data";
-import Container from "./Container";
+import { availabilityBannerData } from "../../data/data";
+import Container from "./../Container";
 
-function ClientTestimonials() {
+function AvailabilityBanner() {
   return (
     <div className="bg-primary text-white py-[100px]">
       <Container>
         <div className="flex lg:flex-row flex-col lg:gap-[5px] gap-[20px]">
-          {clientTestimonialsData.map((el) => {
+          {availabilityBannerData.map((el) => {
             return (
               <div
                 data-aos="fade-up"
@@ -36,4 +36,4 @@ function ClientTestimonials() {
   );
 }
 
-export default ClientTestimonials;
+export default AvailabilityBanner;

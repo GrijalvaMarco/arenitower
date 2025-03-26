@@ -33,7 +33,7 @@ function TipologySection() {
     };
 
     return (
-        <div className="tipology-section bg-primary text-white py-[40px]">
+        <div className="tipology-section bg-secondary text-white py-[40px]">
             <h1
                 className={`relative mb-[20px] py-[15px] text-center sm:text-5xl text-3xl uppercase font-bold`}>
                 Tipología

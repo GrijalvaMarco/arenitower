@@ -1,11 +1,11 @@
-import { projectsData } from "../../data/data";
+import photo from "../../Assets/banner-hero-section.jpeg";
 
 function BannerSection() {
     return (
         <div
           className="bg-cover min-h-screen text-white relative"
           style={{
-            backgroundImage: `url(${projectsData[1].image})`,
+            backgroundImage: `url(${photo})`,
             backgroundPosition: "60%",
           }}>
           <div className="absolute left-0 top-0 w-full h-full bg-[#00000080]"></div>

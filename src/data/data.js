@@ -1,5 +1,5 @@
-import image1 from "../Assets/villa.jpg";
-import image2 from "../Assets/Apartment.jpg";
+import image1 from "../Assets/home-carousel1.jpeg";
+import image2 from "../Assets/home-carousel2.jpeg";
 import image3 from "../Assets/hotel-apartment.jpg";
 import image4 from "../Assets/commercial-1.jpg";
 import image5 from "../Assets/administrative.jpg";
@@ -75,6 +75,23 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
+export const homeCarouselData = [
+  {
+    id: 1,
+    title: "Villa",
+    description: "Settle In a Modern Villa With Your Family",
+    image: image1,
+    to: "/projects/villa",
+  },
+  {
+    id: 2,
+    title: "Apartment",
+    description: "Experience urban living at its finest in our apartments",
+    image: image2,
+    to: "/projects/apartment",
+  },
+];
+
 export const projectsData = [
   {
     id: 1,
@@ -139,7 +156,7 @@ export const projectsData = [
 export const headerData = [
   { id: 1, title: "Inicio", to: "/" },
   { id: 2, title: "Nosotros", to: "/about" },
-  { id: 3, title: "Tipología", to: "/projects" },
+  { id: 3, title: "Tipología", to: "/typologies" },
   { id: 4, title: "Tour Virtual", to: "/virtual-tours" },
   { id: 5, title: "Contacto", to: "/contact" },
 ];
@@ -147,26 +164,43 @@ export const headerData = [
 export const clientTestimonialsData = [
   {
     id: 1,
-    number: "8000",
+    number: "",
     title: "Clients",
     description:
-      "Proudly serving a huge number of satisfied clients from different nationalities",
+      "Departamentos con lock-off: tu refugio personal y tu mejor inversión",
   },
 
   {
     id: 2,
-    number: "350",
+    number: "",
     title: "Projects",
     description:
-      "Consultancy in many real estate projects of all types all over Egypt",
+      "Rentabilidad garantizada con el modelo lock-off de Areni Tower",
   },
 
   {
     id: 3,
-    number: "6",
+    number: "",
     title: "Years",
     description:
-      "Profound knowledge and extensive experience throughout the years in real estate field",
+      "Edición limitada en la zona cotizada de Puerto Vallarta",
+  },
+];
+
+export const availabilityBannerData = [
+  {
+    id: 1,
+    number: "",
+    title: "Clients",
+    description:
+      "Amenidades de lujo y flexibilidad para rentar o disfrutar",
+  },
+  {
+    id: 2,
+    number: "",
+    title: "Projects",
+    description:
+      "Solo 22 departamentos. ¿Serás parte de la exclusividad?",
   },
 ];
 
