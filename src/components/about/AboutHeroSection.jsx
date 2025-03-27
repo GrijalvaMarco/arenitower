@@ -16,8 +16,7 @@ function AboutHeroSection() {
                         <div className="text-center h-full flex items-center justify-center flex-col
                w-[80%] mx-auto p-[20px] uppercase relative md:gap-[20px] gap-[10px]">
                             <h2 className="text-3xl md:text-5xl font-bold">
-                                Jugamos con la dualidad: la calidez terrenal de Vallarta y <br />
-                                la sofisticación vertical.
+                                Areni Tower: La cúspide de Vallarta
                             </h2>
                         </div>
                     </div>
