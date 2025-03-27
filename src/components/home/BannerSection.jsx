@@ -1,6 +1,21 @@
+import { useState, useEffect } from "react";
 import photo from "../../Assets/banner-hero-section.jpeg";
 
 function BannerSection() {
+    const texts = [
+        "Departamentos con lock-off: tu refugio personal y tu mejor inversión",
+        "VIVE EN EL LUGAR QUE SIEMPRE SOÑASTE",
+        "Edición limitada en la zona cotizada de Puerto Vallarta",
+    ];
+    const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        }, 3000);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div
           className="bg-cover min-h-screen text-white relative"
@@ -16,12 +31,9 @@ function BannerSection() {
                 <div
                   className="text-center h-full flex items-center justify-center flex-col
                    w-[80%] mx-auto p-[20px] uppercase relative md:gap-[20px] gap-[10px]">
-                    <h2 className="md:text-6xl sm:text-4xl text-lg  font-bold">
-                        LAS MEJORES VISTAS PERTENECEN A TU HOGAR
+                    <h2 className="md:text-5xl sm:text-4xl text-md font-bold">
+                        {texts[currentTextIndex]}
                     </h2>
-                  <p className="sm:text-base text-xs">
-                    Departamentos en Preventa desde $6.4 MDP.  Opciones de 1, 2 y 3 recámaras en Providencia, Guadalajara.
-                  </p>
                 </div>
               </div>
             </div>
