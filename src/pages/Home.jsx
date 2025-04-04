@@ -6,6 +6,7 @@ import RequestCallback from "../components/RequestCallback";
 import BannerSection from "../components/home/BannerSection";
 import TypologySection from "../components/home/TypologySection";
 import WhatsAppButton from "../components/WhatsAppButton";
+import CarouselBanner from "../components/home/CarouselBanner";
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
       <ClientTestimonials />
       <ProjectsSection />
       <TypologySection />
-      <HeroSection />
+      <CarouselBanner />
       <AboutUs />
       <RequestCallback />
       <WhatsAppButton />

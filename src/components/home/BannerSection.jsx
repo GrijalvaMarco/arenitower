@@ -4,7 +4,7 @@ import photo from "../../Assets/banner-hero-section.jpeg";
 function BannerSection() {
     const texts = [
         "Departamentos con lock-off: tu refugio personal y tu mejor inversión",
-        "VIVE EN EL LUGAR QUE SIEMPRE SOÑASTE",
+        "Rentabilidad garantizada con el modelo lock-off de Areni Tower",
         "Edición limitada en la zona cotizada de Puerto Vallarta",
     ];
     const [currentTextIndex, setCurrentTextIndex] = useState(0);

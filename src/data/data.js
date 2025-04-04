@@ -78,15 +78,15 @@ import {
 export const homeCarouselData = [
   {
     id: 1,
-    title: "Villa",
-    description: "Settle In a Modern Villa With Your Family",
+    title: "Amenidades de lujo y flexibilidad para rentar o disfrutar",
+    description: "Villa",
     image: image1,
     to: "/projects/villa",
   },
   {
     id: 2,
-    title: "Apartment",
-    description: "Experience urban living at its finest in our apartments",
+    title: "Solo 22 departamentos. ¿Serás parte de la exclusividad?",
+    description: "Apartment",
     image: image2,
     to: "/projects/apartment",
   },

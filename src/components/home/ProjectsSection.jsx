@@ -1,7 +1,6 @@
 import Projects from "../Projects";
 import MainHead from "../mainHead/MainHead";
 import image from "../../assets/home-availability-section.jpeg";
-import AvailabilityBanner from "./AvailabilityBanner";
 
 function ProjectsSection() {
   return (
@@ -15,7 +14,6 @@ function ProjectsSection() {
         { /*<MainHead>Disponibilidad</MainHead> 
       <Projects />*/ }
       </div>
-      <AvailabilityBanner />
     </div>
   );
 }
