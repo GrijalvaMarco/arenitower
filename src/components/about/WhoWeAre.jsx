@@ -22,12 +22,11 @@ function WhoWeAre() {
                   Historia
                 </h2>
                 <p className="text-gray">
-                  Areni Tower nace de un homenaje a la esencia de Puerto Vallarta:
-                  la arena dorada que guarda historias al pie de verticales que tocan
-                  el cielo. Aquí, cada departamento es un santuario de diseño, donde los
-                  atardeceres se convierten en arte, departamentos llenos de detalles
-                  pensados para quienes buscan lo extraordinario.
-                  No vendemos espacios, creamos legados.
+                  Areni Tower nace de un homenaje a la esencia de Puerto Vallarta: la arena dorada que guarda historias al pie de verticales que tocan el cielo. Aquí, cada departamento es un santuario de diseño, donde los atardeceres se convierten en arte, departamentos llenos de detalles pensados para quienes buscan lo extraordinario. No vendemos espacios, creamos legados.
+                  <br />
+                  <br />
+                  En Areni Tower, entendemos que el lujo y la rentabilidad pueden coexistir. Por eso, cada departamento ofrece la flexibilidad de un lock-off inteligente: diseñado para quienes desean disfrutar de su santuario personal mientras su inversión trabaja con la renta de un espacio independiente. Sin comprometer privacidad, diseño o exclusividad.
+
                 </p>
               </div>
             </div>
@@ -40,9 +39,9 @@ function WhoWeAre() {
                   Misión
                 </h2>
                 <p className="text-gray">
-                  Elevar el estándar de vida en Puerto Vallarta a través de Areni Tower,
-                  donde la arquitectura, los servicios exclusivos y la ubicación
-                  privilegiada se unen para ofrecer una experiencia de lujo sin concesiones.
+                  Reinventar el concepto de inversión inmobiliaria de lujo en Puerto Vallarta,
+                  combinando diseño excepcional, ubicación privilegiada y flexibilidad inteligente (lock-off)
+                  para maximizar rentabilidad sin sacrificar estilo de vida.
                 </p>
               </div>
 
@@ -58,12 +57,11 @@ function WhoWeAre() {
               className="flex md:flex-row flex-col-reverse  mt-[30px] bg-[#222222] ">
               <div className="flex  justify-center flex-col md:p-[50px] p-[30px]">
                 <h2 className="sm:text-3xl text-2xl uppercase font-bold mb-[10px]">
-                  Our Vision
+                  Visión
                 </h2>
                 <p className="text-gray">
-                  Ser el ícono de prestigio residencial en Vallarta, reconocido por fusionar el
-                  alma cálidadel destino con la excelencia en diseño y comodidad, atrayendo
-                  a quienes demandan sólo lo excepcional.
+                  Ser el desarrollo más cotizado por inversionistas sofisticados que buscan
+                  un equilibrio perfecto entre disfrute personal y retorno financiero en el mercado de lujo vallartense.
                 </p>
               </div>
 
