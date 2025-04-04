@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
 import TypologyDetails from './TypologyDetails';
+import photo from '../Assets/home-carousel1.jpeg';
 
 const TypologyElement = ({ typology }: { typology: any }) => {
     const [showDetails, setShowDetails] = useState(false);
 
     return (
-        <div className="bg-secondary border p-4 rounded shadow-sm">
-            <button
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-                onClick={() => setShowDetails(true)}
-            >
-                {typology.name}
-            </button>
+        <div className="bg-secondary p-4">
+            <h2 className="text-lg text-white font-bold text-center mb-4">{typology.name}</h2>
+            <div className="relative">
+                <img
+                    src={photo}
+                    alt={`${typology.name} illustration`}
+                    className="w-full h-auto rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                />
+                <button
+                    className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-sm px-4 py-2 rounded-lg hover:bg-opacity-70 transition-opacity"
+                    onClick={() => setShowDetails(true)}
+                >
+                    Ver detalles
+                </button>
+            </div>
             <p className="text-sm mt-2">
                 Quantity: {typology.quantity}
             </p>
