@@ -14,7 +14,7 @@ const TypologyPage = () => {
     ];
 
     return (
-        <div>
+        <div className="bg-secondary">
             <HeroSection page={"Tipologías"} />
             <Typologies typologies={typologies} />
         </div>
