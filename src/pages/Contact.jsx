@@ -7,7 +7,7 @@ import MapComponent from "../components/Map";
 function Contact() {
   return (
     <div>
-      <HeroSection page={"Contact"} />
+      <HeroSection page={"Contacto"} />
       <div className="text-white">
         <ContactForm />
       </div>

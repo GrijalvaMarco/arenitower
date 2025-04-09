@@ -45,12 +45,12 @@ function ContactForm() {
         <div className="bg-lightGray sm:p-[40px] p-[20px]">
           <div>
             <h1 className="sm:text-4xl text-2xl uppercase font-bold">
-              Request A Callback
+              Formulario de contacto
             </h1>
-            <p className="text-gray mt-[10px] sm:text-base text-sm">
+            {/* <p className="text-gray mt-[10px] sm:text-base text-sm">
               Submit your contact information and any questions you have in mind
               and we will happily assist you.
-            </p>
+            </p> */}
           </div>
           <form onSubmit={handleSubmit}>
             <div
@@ -74,14 +74,14 @@ function ContactForm() {
             <div className="my-[20px]">
               <textarea
                 className="border-none sm:w-[50%] w-full outline-none p-[10px] bg-[#262626] placeholder:text-gray resize-none h-[200px]"
-                placeholder="Message"
+                placeholder="Mensaje"
                 name="message"
                 value={values.message}
                 onChange={handleInputChange}
               />
             </div>
 
-            <Button>Submit</Button>
+            <Button>Enviar</Button>
 
             {error && <p className="mt-[20px] text-red-400">{error}</p>}
             {submit && <p className="mt-[20px] text-primary">{submit}</p>}

@@ -27,18 +27,7 @@ function Footer() {
 
             <div className="w-[100%] py-[10px]">
               <h2 className="text-xl uppercase font-bold mb-[20px]">
-                Who we are?
-              </h2>
-              <p className="text-gray text-sm">
-                New Capital is a real estate consultancy company proudly serving
-                thousands of satisfied clients and partnering with the top real
-                estate developers in Egypt.
-              </p>
-            </div>
-
-            <div className="w-[100%] py-[10px]">
-              <h2 className="text-xl uppercase font-bold mb-[20px]">
-                Follow Us
+                Síguenos
               </h2>
 
               <div className="flex items-center gap-[10px]">
@@ -56,12 +45,12 @@ function Footer() {
               </div>
             </div>
 
-            <div className="w-[100%] py-[10px]">
+            {/* <div className="w-[100%] py-[10px]">
               <h2 className="text-xl uppercase font-bold mb-[20px]">
-                Follow Us
+                Síguenos
               </h2>
               <Button>Request A Callback</Button>
-            </div>
+            </div> */}
           </div>
         </Container>
       </div>

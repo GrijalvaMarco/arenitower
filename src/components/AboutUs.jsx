@@ -13,7 +13,10 @@ function AboutUs() {
             <h2 className="text-2xl font-bold uppercase my-[20px]">
               {el.title}
             </h2>
-            <p className="text-gray">{el.description}</p>
+            <div
+              className="text-gray text-left"
+              dangerouslySetInnerHTML={{ __html: el.description }}
+            />
           </div>
         );
       })}

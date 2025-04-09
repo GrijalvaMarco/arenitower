@@ -207,28 +207,47 @@ export const availabilityBannerData = [
 export const aboutUsData = [
   {
     id: 1,
-    title: "Experience",
+    title: "Exclusividad Radical",
     image: experienceIcon,
     description:
-      "Based on our extensive experience and resources, we provide sincere consultancy you can depend on to help you with your investment and property buying decisions.",
+      `
+      El mercado de lujo busca lo único, no lo masivo. 
+      <ul class="list-disc pl-5 mt-2">
+        <li>Edición limitada</li>
+        <li>Amenidades hiperpersonalizadas</li>
+        <li>Diseños arquitectónicos firmados por un nombre de prestigio</li>
+      </ul>
+    `,
     bgColor: "#173329",
   },
   {
     id: 2,
-    title: "Trust",
+    title: "Flexibilidad Inteligente (Lock-Off como Estándar)",
     image: trustIcon,
     description:
-      "We have built a reputation through meaningful communication and honesty with our clients. We are trusted to fulfill promises and take care of our clients’ concerns.",
-    bgColor: "#8DA59D",
+`
+      Atrae tanto a residentes como inversionistas.
+      <ul class="list-disc pl-5 mt-2">
+        <li>Diseño modular</li>
+        <li>Opciones de personalización</li>
+        <li>Uso eficiente del espacio</li>
+      </ul>
+    `,
+      bgColor: "#8DA59D",
   },
 
   {
     id: 3,
-    title: "Variety",
+    title: "Conexión Emocional con Puerto Vallarta",
     image: varietyIcon,
     description:
-      "We specialize in various projects that offer all types of units such as apartments, penthouses, villas, commercial, administrative, and medical units.",
-    bgColor: "#173329",
+      `El lujo ya no es solo materiales, es pertenencia.
+      <ul class="list-disc pl-5 mt-2">
+        <li>Integración cultural</li>
+        <li>Vistas panorámicas</li>
+        <li>Acceso a eventos locales</li>
+        `,
+      bgColor: "#173329",
   },
 ];
 
@@ -244,34 +263,34 @@ export const formData = [
     id: 1,
     name: "firstName",
     type: "text",
-    placeholder: "First Name",
+    placeholder: "Nombre",
   },
   {
     id: 2,
     name: "lastName",
     type: "text",
-    placeholder: "Last Name",
+    placeholder: "Apellido",
   },
 
   {
     id: 3,
     name: "phone",
     type: "number",
-    placeholder: "Your Phone",
+    placeholder: "Celular",
   },
 
   {
     id: 4,
     name: "email",
     type: "email",
-    placeholder: "Your Email (optional)",
+    placeholder: "Email",
   },
 ];
 
 export const contactInfoData = [
-  { id: 1, title: "+20 1151747091", image: phone },
-  { id: 2, title: "mustafakhaledinfo@gmail.com", image: email },
-  { id: 3, title: "Cairo, Egypt", image: location },
+  { id: 1, title: "+52 3337275115", image: phone },
+  { id: 2, title: "ventas@arenitower.com", image: email },
+  { id: 3, title: "Guadalajara, Jalisco", image: location },
 ];
 
 export const villaData = [
