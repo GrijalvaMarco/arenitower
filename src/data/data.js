@@ -207,47 +207,22 @@ export const availabilityBannerData = [
 export const aboutUsData = [
   {
     id: 1,
-    title: "Exclusividad Radical",
+    title: "Exclusividad",
     image: experienceIcon,
-    description:
-      `
-      El mercado de lujo busca lo único, no lo masivo. 
-      <ul class="list-disc pl-5 mt-2">
-        <li>Edición limitada</li>
-        <li>Amenidades hiperpersonalizadas</li>
-        <li>Diseños arquitectónicos firmados por un nombre de prestigio</li>
-      </ul>
-    `,
     bgColor: "#173329",
   },
   {
     id: 2,
-    title: "Flexibilidad Inteligente (Lock-Off como Estándar)",
+    title: "Flexibilidad Inteligente (Lock-Off)",
     image: trustIcon,
-    description:
-`
-      Atrae tanto a residentes como inversionistas.
-      <ul class="list-disc pl-5 mt-2">
-        <li>Diseño modular</li>
-        <li>Opciones de personalización</li>
-        <li>Uso eficiente del espacio</li>
-      </ul>
-    `,
-      bgColor: "#8DA59D",
+    bgColor: "#8DA59D",
   },
 
   {
     id: 3,
     title: "Conexión Emocional con Puerto Vallarta",
     image: varietyIcon,
-    description:
-      `El lujo ya no es solo materiales, es pertenencia.
-      <ul class="list-disc pl-5 mt-2">
-        <li>Integración cultural</li>
-        <li>Vistas panorámicas</li>
-        <li>Acceso a eventos locales</li>
-        `,
-      bgColor: "#173329",
+    bgColor: "#173329",
   },
 ];
 
