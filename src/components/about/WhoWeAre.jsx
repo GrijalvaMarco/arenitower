@@ -1,5 +1,6 @@
 import photo1 from "../../Assets/home-carousel1.jpeg";
 import photo2 from "../../Assets/home-carousel2.jpeg";
+import photo3 from "../../Assets/aboutus-vision.jpg";
 import Container from "../Container";
 
 function WhoWeAre() {
@@ -66,7 +67,7 @@ function WhoWeAre() {
               </div>
 
               <img
-                src={photo2}
+                src={photo3}
                 alt="vision"
                 className="bg-cover md:w-[50%] w-full"
               />
