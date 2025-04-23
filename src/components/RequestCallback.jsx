@@ -1,6 +1,7 @@
 import { MdLocalPhone } from "react-icons/md";
 import Button from "./Button";
 import Container from "./Container";
+import { openWhatsApp } from "../utils/whatsapp";
 
 function RequestCallback() {
   return (
@@ -24,7 +25,7 @@ function RequestCallback() {
           </div>
 
           <div>
-            <Button>Solicitar una llamada</Button>
+            <Button  onClick={() => openWhatsApp()}>Solicitar una llamada</Button>
           </div>
         </div>
       </Container>
