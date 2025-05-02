@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import TypologyDetails from './TypologyDetails';
-import photo from '../Assets/home-carousel1.jpeg';
 import Button from './Button';
 
 const TypologyElement = ({ typology }: { typology: any }) => {
@@ -10,13 +9,13 @@ const TypologyElement = ({ typology }: { typology: any }) => {
         <>
             <div className="bg-lightGray shadow-md overflow-hidden transition-transform transform hover:scale-105">
                 <img
-                    src={photo}
-                    alt={`${typology.name} illustration`}
+                    src={typology.image}
+                    alt={`${typology.label} illustration`}
                     className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                    <h2 className="text-xl font-semibold text-white mb-2">{typology.name}</h2>
-                    <p className="text-sm text-white mb-4">Quantity: {typology.quantity}</p>
+                    <h2 className="text-xl font-semibold text-white mb-2">{typology.label}</h2>
+                    <p className="text-sm text-white mb-4">Cantidad: {typology.quantity}</p>
                     <p className="text-sm text-white mb-4">Area: {typology.area}</p>
                     <div className="text-white">
                         <Button onClick={() => setShowDetails(true)}>
