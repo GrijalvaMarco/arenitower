@@ -29,7 +29,7 @@ const OurValues = () => {
                             Nuestros Valores
                         </h2>
                         <p className="text-gray-300 mb-8 leading-relaxed mt-4" style={{ marginTop: '1rem' }}>
-                            En Arenitower, creemos que la compra de un departamento es más que una transacción; es el inicio de una nueva etapa en la vida de nuestros clientes. Por eso, nos guiamos por valores que garantizan una experiencia transparente, segura y personalizada.
+                            En Areni Tower, creemos que la compra de un departamento es más que una transacción; es el inicio de una nueva etapa en la vida de nuestros clientes. Por eso, nos guiamos por valores que garantizan una experiencia transparente, segura y personalizada.
                         </p>
                         <div className="space-y-6" style={{ marginTop: '1rem' }}>
                             {accordionItems.map((item, index) => (

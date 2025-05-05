@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import photo from "../../Assets/banner-hero-section.jpeg";
+import photo from "../../Assets/banner-hero-section.jpg";
 
 function BannerSection() {
   const texts = [

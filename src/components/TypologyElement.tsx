@@ -15,7 +15,9 @@ const TypologyElement = ({ typology }: { typology: any }) => {
                 />
                 <div className="p-4">
                     <h2 className="text-xl font-semibold text-white mb-2">{typology.label}</h2>
-                    <p className="text-sm text-white mb-4">Cantidad: {typology.quantity}</p>
+                    <span className="inline-block bg-accentColor text-white text-xs font-bold rounded-md px-2 py-1 mb-4">
+                        Quedan: {typology.quantity}
+                    </span>
                     <p className="text-sm text-white mb-4">Area: {typology.area}</p>
                     <div className="text-white">
                         <Button onClick={() => setShowDetails(true)}>
