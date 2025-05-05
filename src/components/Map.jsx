@@ -1,18 +1,63 @@
 import React from "react";
+import { FaShip, FaShoppingBag, FaHospital, FaUtensils, FaFish, FaParachuteBox, FaCoffee, FaFilm, FaTableTennis } from "react-icons/fa";
+import { GiPalmTree } from "react-icons/gi";
 
 function MapComponent() {
   return (
-    <div className="h-[60vh] overflow-hidden">
-      <iframe
-        title="Google Maps Location"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1495.3551921630406!2d-105.24070329655086!3d20.65349186190038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842145991f10693d%3A0x4e7447552ea961bc!2sAv.%20Francisco%20Medina%20Ascencio%202860%2C%20Zona%20Hotelera%20Nte.%2C%2048314%20Puerto%20Vallarta%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1744834041680!5m2!1ses-419!2smx"
-        width="100%"
-        height="100%"
-        style={{ border: 0 }}
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        allowFullScreen
-      ></iframe>
+    <div className="h-screen flex flex-col sm:flex-row bg-white">
+      <div className="sm:w-2/5 w-full p-4 z-10 relative flex flex-col justify-center items-center">
+        <h2 className="text-6xl font-bold">UBICACIÓN</h2>
+        <p className="mt-8 mb-8 text-center">
+          <span className="text-3xl font-bold block">Conectado a todo y con</span>
+          <span className="text-3xl font-bold block ml-4">vista al mar.</span>
+        </p>
+        <ul className="mt-4 space-y-2 text-2xl">
+          <li className="flex items-start text-2xl">
+            <FaShip className="w-6 h-6 mr-2 flex-shrink-0" />
+            Marina Puerto Vallarta
+          </li>
+          <li className="flex items-start">
+            <GiPalmTree className="w-6 h-6 mr-2 flex-shrink-0" />
+            Club de Play Regina Puerto Vallarta
+          </li>
+          <li className="flex items-start">
+            <FaShoppingBag className="w-6 h-6 mr-2 flex-shrink-0" />
+            Centros comerciales
+          </li>
+          <li className="flex items-start">
+            <FaHospital className="w-6 h-6 mr-2 flex-shrink-0" />
+            Hospitales a 2 min
+          </li>
+          <li className="flex items-start">
+            <FaUtensils className="w-6 h-6 mr-2 flex-shrink-0" />
+            Restaurantes a 5 min
+          </li>
+          <li className="flex items-start">
+            <FaFish className="w-6 h-6 mr-2 flex-shrink-0" />
+            Club de pesca
+          </li>
+          <li className="flex items-start">
+            <FaParachuteBox className="w-6 h-6 mr-2 flex-shrink-0" />
+            Skydive, sky tours
+          </li>
+          <li className="flex items-start">
+            <FaCoffee className="w-6 h-6 mr-2 flex-shrink-0" />
+            Cafeterías
+          </li>
+          <li className="flex items-start">
+            <FaFilm className="w-6 h-6 mr-2 flex-shrink-0" />
+            Cine
+          </li>
+          <li className="flex items-start">
+            <FaTableTennis className="w-6 h-6 mr-2 flex-shrink-0" />
+            Padel
+          </li>
+        </ul>
+      </div>
+      <div
+        className="sm:w-3/5 w-full h-64 sm:h-auto bg-contain bg-no-repeat bg-center"
+        style={{ backgroundImage: "url('src/Assets/areni-location.png')" }}
+      ></div>
     </div>
   );
 }
