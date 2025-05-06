@@ -7,7 +7,7 @@ import { FaDoorOpen } from "react-icons/fa";
 
 const TypologyDetails = ({ details, onClose }: { details: any; onClose: () => void }) => {
     return (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
+        <div className="fixed inset-0 flex items-center justify-center z-50 text-white">
             <div className="bg-secondary w-full max-w-full h-[90vh] p-6 rounded shadow-lg relative overflow-y-auto mx-4 transition-transform transform scale-95 opacity-0 animate-fade-in">
                 <button
                     className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
