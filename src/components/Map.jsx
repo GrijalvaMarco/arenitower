@@ -1,6 +1,7 @@
 import React from "react";
 import { FaShip, FaShoppingBag, FaHospital, FaUtensils, FaFish, FaParachuteBox, FaCoffee, FaFilm, FaTableTennis } from "react-icons/fa";
 import { GiPalmTree } from "react-icons/gi";
+import image from "../Assets/areni-location.png";
 
 function MapComponent() {
   return (
@@ -56,7 +57,7 @@ function MapComponent() {
       </div>
       <div
         className="sm:w-3/5 w-full h-64 sm:h-auto bg-contain bg-no-repeat bg-center"
-        style={{ backgroundImage: "url('src/Assets/areni-location.png')" }}
+        style={{ backgroundImage: `url(${image})` }}
       ></div>
     </div>
   );
