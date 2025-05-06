@@ -40,7 +40,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="relative top-[-100px]">
+    <div className="relative top-[-200px]">
       <Container>
         <div className="bg-lightGray sm:p-[40px] p-[20px]">
           <div>
