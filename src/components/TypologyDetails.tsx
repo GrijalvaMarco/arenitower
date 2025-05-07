@@ -4,6 +4,8 @@ import { FaBath } from "react-icons/fa";
 import { GiCookingPot } from "react-icons/gi";
 import { FaCouch } from "react-icons/fa";
 import { FaDoorOpen } from "react-icons/fa";
+import TypologyDetailsPanel from './TypologyDetailsPanel';
+import Button from './Button';
 
 const TypologyDetails = ({ details, onClose }: { details: any; onClose: () => void }) => {
     return (
@@ -21,40 +23,44 @@ const TypologyDetails = ({ details, onClose }: { details: any; onClose: () => vo
                         alt="Typology"
                         className="w-full h-auto rounded"
                     />
-                    <div className="flex flex-col items-start justify-start h-full mx-4">
+                    <div className="flex flex-col items-start justify-start h-full mx-8 my-8">
                         <div className="mb-6">
-                            <h1 className="text-2xl font-bold">{details.label}</h1>
+                            <h1 className="text-4xl font-bold">{details.label}</h1>
                         </div>
-                        <h2 className="text-2xl  mb-4">
-                            {details.quantity} unidades en desarrollo
-                        </h2>
-                        <h2 className="text-xl font-semibold mb-4">Caracteristicas</h2>
-                        <div className="flex items-center space-x-2">
-                            <MdBed size={32} />
-                            <span>{details.details.bedrooms} {details.details.bedrooms > 1 ? 'récamaras' : 'récamara'}</span>
+                        <div className="w-[60%]">
+                            <TypologyDetailsPanel typology={details} />
                         </div>
-                        <div className="flex items-center space-x-2">
-                            <FaBath size={24} />
-                            <span>{details.details.bathrooms} {details.details.bathrooms > 1 ? 'Baños' : 'Baño'}</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <GiCookingPot size={24} />
-                            <span>
-                                {details.details.kitchenettes > 1
-                                    ? `${details.details.kitchenettes} Cocinetas`
-                                    : 'Cocineta'}
-                            </span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <FaCouch size={24} />
-                            <span>Sala/Comedor</span>
-                        </div>
-                        {details.details.lockOff !== undefined && (
+                        <div className="mt-8">
                             <div className="flex items-center space-x-2">
-                                <FaDoorOpen size={24} />
-                                <span>LockOff</span>
+                                <MdBed size={32} />
+                                <span>{details.details.bedrooms} {details.details.bedrooms > 1 ? 'récamaras' : 'récamara'}</span>
                             </div>
-                        )}
+                            <div className="flex items-center space-x-2">
+                                <FaBath size={24} />
+                                <span>{details.details.bathrooms} {details.details.bathrooms > 1 ? 'Baños' : 'Baño'}</span>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <GiCookingPot size={24} />
+                                <span>
+                                    {details.details.kitchenettes > 1
+                                        ? `${details.details.kitchenettes} Cocinetas`
+                                        : 'Cocineta'}
+                                </span>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <FaCouch size={24} />
+                                <span>Sala/Comedor</span>
+                            </div>
+                            {details.details.lockOff !== undefined && (
+                                <div className="flex items-center space-x-2">
+                                    <FaDoorOpen size={24} />
+                                    <span>LockOff</span>
+                                </div>
+                            )}
+                        </div>
+                        <div className="mt-8">
+                            <Button>Solicitar información</Button>
+                        </div>
                     </div>
                 </div>
             </div>

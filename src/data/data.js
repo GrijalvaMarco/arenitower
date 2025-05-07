@@ -168,7 +168,7 @@ export const projectsData = [
 export const headerData = [
   { id: 1, title: "Inicio", to: "/" },
   { id: 2, title: "Nosotros", to: "/about" },
-  { id: 3, title: "Tipología", to: "/typologies" },
+  { id: 3, title: "Tipologías", to: "/typologies" },
   { id: 4, title: "Tour Virtual", to: "/virtual-tours" },
   { id: 5, title: "Contacto", to: "/contact" },
 ];
@@ -806,7 +806,7 @@ export const tipologyData = [
     },
     specifications: ["3 Recámaras", "2 Baños", "2 Cocinetas", "Sala / Comedor", "Lock Off"],
     virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
-    details: { bedrooms: 3, bathrooms: 2, lockOff: 1, kitchenettes: 2 },
+    details: { bedrooms: 3, bathrooms: 3, lockOff: 1, kitchenettes: 2 },
     quantity: 1,
   },
 ];
