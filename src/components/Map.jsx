@@ -55,10 +55,17 @@ function MapComponent() {
           </li>
         </ul>
       </div>
-      <div
-        className="sm:w-3/5 w-full h-64 sm:h-auto bg-contain bg-no-repeat bg-center"
+      <a
+        href="https://www.google.com/maps?q=Av.+Francisco+Medina+Ascencio+2860,+Zona+Hotelera+Nte.,+48314+Puerto+Vallarta,+Jal.&z=15"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="sm:w-3/5 w-full h-64 sm:h-auto bg-contain bg-no-repeat bg-center relative group"
         style={{ backgroundImage: `url(${image})` }}
-      ></div>
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 sm:hidden flex items-start justify-center transition-opacity duration-300 ease-in-out">
+          <span className="text-white text-2xl font-bold mt-4 group-hover:scale-110 transform transition-transform duration-300">Click</span>
+        </div>
+      </a>
     </div>
   );
 }
