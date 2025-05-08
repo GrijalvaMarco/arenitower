@@ -8,7 +8,7 @@ const TypologyPage = () => {
 
     return (
         <div className="bg-secondary">
-            <HeroSection image={image} />
+            <HeroSection image={image} text={"Tipologías"} />
             <Typologies typologies={tipologyData} />
         </div>
     );

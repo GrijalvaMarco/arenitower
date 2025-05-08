@@ -3,7 +3,7 @@ import { tipologyData } from "../../data/data";
 import TypologyDetails from "./TypologyDetails";
 
 function TipologySection() {
-    const [selectedTipology, setSelectedTipology] = useState(null);
+    const [selectedTipology, setSelectedTipology] = useState(tipologyData[0]);
 
     const tipologyGroups = tipologyData.reduce((acc, tipology) => {
         if (acc[tipology.type]) {
@@ -35,15 +35,16 @@ function TipologySection() {
     return (
         <div className="tipology-section bg-secondary text-white py-[40px]">
             <div className="container mx-auto">
-            <div className="grid grid-cols-12 gap-4">
-                <div className="col-span-2">
+                <div className="grid grid-cols-12 gap-4">
+                    {/* Sidebar for typology groups */}
+                    <div className="col-span-12 sm:col-span-4 lg:col-span-2">
                         {
                             Object.keys(tipologyGroups).map((type) => {
                                 const isCollapsed = collapsedTypes[type];
                                 return (
-                                    <div key={type} className="mb-[20px] mt-[10px]">
+                                    <div key={type} className="mb-[20px] mt-[10px] pl-[20px]">
                                         <h2
-                                            className="text-3xl font-bold cursor-pointer"
+                                            className="text-2xl sm:text-3xl font-bold cursor-pointer"
                                             onClick={() => toggleCollapse(type)}
                                         >
                                             {type}
@@ -70,7 +71,8 @@ function TipologySection() {
                             })
                         }
                     </div>
-                    <div className="col-span-6">
+                    {/* Image section */}
+                    <div className="col-span-12 sm:col-span-8 lg:col-span-6">
                         {
                             selectedTipology ? (
                                 <img
@@ -79,16 +81,19 @@ function TipologySection() {
                                     className="w-full h-full object-cover p-4"
                                 />
                             ) : (
-                                <p>Selecciona una tipología para ver la imagen</p>
+                                <p className="text-center">Selecciona una tipología para ver la imagen</p>
                             )
                         }
                     </div>
-                    <div className="col-span-4">
-                            {selectedTipology ? (
+                    {/* Details section */}
+                    <div className="col-span-12 sm:col-span-12 lg:col-span-4">
+                        {
+                            selectedTipology ? (
                                 <TypologyDetails tipology={selectedTipology} />
                             ) : (
-                                <p>Selecciona una tipología para ver los detalles</p>
-                            )}
+                                <p className="text-center">Selecciona una tipología para ver los detalles</p>
+                            )
+                        }
                     </div>
                 </div>
             </div>

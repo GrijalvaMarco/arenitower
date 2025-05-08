@@ -32,7 +32,7 @@ const TypologyDetails = ({ details, onClose }: { details: any; onClose: () => vo
                         </div>
                         <div className="mt-8">
                             <div className="flex items-center space-x-2">
-                                <MdBed size={32} />
+                                <MdBed size={24} />
                                 <span>{details.details.bedrooms} {details.details.bedrooms > 1 ? 'récamaras' : 'récamara'}</span>
                             </div>
                             <div className="flex items-center space-x-2">
@@ -54,7 +54,7 @@ const TypologyDetails = ({ details, onClose }: { details: any; onClose: () => vo
                             {details.details.lockOff !== undefined && (
                                 <div className="flex items-center space-x-2">
                                     <FaDoorOpen size={24} />
-                                    <span>LockOff</span>
+                                    <span>Lock off</span>
                                 </div>
                             )}
                         </div>
