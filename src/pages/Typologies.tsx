@@ -10,9 +10,8 @@ const TypologyPage = () => {
 
     return (
         <div className="bg-secondary">
-            <HeroSection image={image} text={"Tipologías"} />
+            <HeroSection image={image} text={"TIPOLOGÍAS"} />
             <ClientTestimonials />
-            <Amenities />
             <Typologies typologies={tipologyData} />
         </div>
     );

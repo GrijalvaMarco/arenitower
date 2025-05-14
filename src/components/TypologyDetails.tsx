@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdBed } from "react-icons/md";
+import { MdBed, MdClose } from "react-icons/md";
 import { FaBath } from "react-icons/fa";
 import { GiCookingPot } from "react-icons/gi";
 import { FaCouch } from "react-icons/fa";
@@ -12,10 +12,10 @@ const TypologyDetails = ({ details, onClose }: { details: any; onClose: () => vo
         <div className="fixed inset-0 flex items-center justify-center z-50 text-white">
             <div className="bg-secondary w-full max-w-full h-[90vh] p-6 rounded shadow-lg relative overflow-y-auto mx-4 transition-transform transform scale-95 opacity-0 animate-fade-in">
                 <button
-                    className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+                    className="absolute top-4 right-4 text-primary p-2 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 ease-in-out border-2 border-gray-300 group"
                     onClick={onClose}
                 >
-                    Close
+                    <MdClose size={24} className="transform group-hover:rotate-45 transition-transform duration-500" />
                 </button>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <img

@@ -7,12 +7,13 @@ import BannerSection from "../components/home/BannerSection";
 import TypologySection from "../components/home/TypologySection";
 import WhatsAppButton from "../components/WhatsAppButton";
 import CarouselBanner from "../components/home/CarouselBanner";
+import Amenities from "../components/Amenities";
 
 function Home() {
   return (
     <div>
       <BannerSection />
-      <ClientTestimonials />
+      <Amenities />
       <ProjectsSection />
       <TypologySection />
       <CarouselBanner />
