@@ -42,7 +42,7 @@ function CarouselBanner() {
                 {homeCarouselData[imageIndex].title}
               </h2>
               <div>
-                <Link to={"/projects"}>
+                <Link to={"/typologies"}>
                   <Button>Ver Tipologías</Button>
                 </Link>
               </div>
