@@ -656,6 +656,119 @@ export const newCairoData = [
   },
 ];
 
+export const typologyDataByLevel = [
+  {
+    typologyId: 1,
+    type: "N1",
+    name: "101",
+  },
+  {
+    typologyId: 2,
+    type: "N1",
+    name: "102",
+  },
+  {
+    typologyId: 3,
+    type: "N2",
+    name: "201",
+  },
+  {
+    typologyId: 4,
+    type: "N2",
+    name: "202",
+  },
+  {
+    typologyId: 6,
+    type: "N2",
+    name: "203",
+  },
+  {
+    typologyId: 5,
+    type: "N3",
+    name: "301",
+  },
+  {
+    typologyId: 4,
+    type: "N3",
+    name: "302",
+  },
+  {
+    typologyId: 6,
+    type: "N3",
+    name: "303",
+  },
+  {
+    typologyId: 5,
+    type: "N4",
+    name: "401",
+  },
+  {
+    typologyId: 4,
+    type: "N4",
+    name: "402",
+  },
+  {
+    typologyId: 6,
+    type: "N4",
+    name: "403",
+  },
+  {
+    typologyId: 5,
+    type: "N5",
+    name: "501",
+  },
+  {
+    typologyId: 4,
+    type: "N5",
+    name: "502",
+  },
+  {
+    typologyId: 6,
+    type: "N5",
+    name: "503",
+  },
+  {
+    typologyId: 5,
+    type: "N6",
+    name: "601",
+  },
+  {
+    typologyId: 4,
+    type: "N6",
+    name: "602",
+  },
+  {
+    typologyId: 6,
+    type: "N6",
+    name: "603",
+  },
+  {
+    typologyId: 5,
+    type: "N7",
+    name: "701",
+  },
+  {
+    typologyId: 4,
+    type: "N7",
+    name: "702",
+  },
+  {
+    typologyId: 6,
+    type: "N7",
+    name: "703",
+  },
+  {
+    typologyId: 7,
+    type: "N8",
+    name: "801",
+  },
+  {
+    typologyId: 8,
+    type: "N8",
+    name: "802",
+  },
+]
+
 export const tipologyData = [
   {
     id: 1,
