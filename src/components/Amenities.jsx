@@ -14,7 +14,7 @@ function Amenities() {
   return (
     <div className="bg-primary text-white py-10">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Áreas</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">ÁREAS</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {amenities.map((amenity, index) => (
             <div key={index} className="flex flex-col items-center text-center">
