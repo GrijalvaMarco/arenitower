@@ -13,7 +13,7 @@ function Footer() {
         <Container>
           <div className="border-t border-[#b9bbbd] flex lg:gap-[10px] gap-[20px] py-[40px] lg:flex-nowrap flex-wrap">
             <ul className="w-[100%] py-[10px]">
-              <h2 className="text-xl uppercase font-bold mb-[20px]">Menu</h2>
+              <h2 className="text-xl uppercase font-bold mb-[20px]">Menú</h2>
               {headerData.map((el) => {
                 return (
                   <li

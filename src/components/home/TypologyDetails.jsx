@@ -1,4 +1,5 @@
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 function TypologyDetails({ tipology }) {
     return (
@@ -41,7 +42,9 @@ function TypologyDetails({ tipology }) {
                 </ul>
             </div>
             <div className="mt-[20px] text-center sm:text-left">
-                <Button>Solicitar más información</Button>
+                <Link to="/contact">
+                    <Button>Solicitar más información</Button>
+                </Link>
             </div>
         </div>
     );

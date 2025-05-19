@@ -16,7 +16,7 @@ const TypologyElement = ({ typology }: { typology: any }) => {
                 <div className="p-4">
                     <h2 className="text-xl font-semibold text-white mb-2">{typology.label}</h2>
                     <span className="inline-block bg-accentColor text-white text-xs font-bold rounded-md px-2 py-1 mb-4">
-                        Quedan: {typology.quantity}
+                        {typology.quantity === 1 ? "Sólo: " : "Quedan: "}{typology.quantity}
                     </span>
                     <p className="text-sm text-white mb-4">Area: {typology.area} <sup>m2</sup></p>
                     <div className="text-white">
