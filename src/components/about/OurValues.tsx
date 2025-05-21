@@ -7,7 +7,7 @@ const OurValues = () => {
     const accordionItems = [
         {
             title: 'Exclusividad:',
-            content: 'Solo 22 residencias. Un privilegio para quienes buscan lo extraordinario.',
+            content: 'Solo 22 departamentos. Un privilegio para quienes buscan lo extraordinario.',
         },
         {
             title: 'Flexibilidad Inteligente (Lock-Off):',

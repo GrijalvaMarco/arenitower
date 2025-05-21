@@ -1,11 +1,9 @@
 import React from 'react';
-import { MdBed, MdClose } from "react-icons/md";
-import { FaBath } from "react-icons/fa";
-import { GiCookingPot } from "react-icons/gi";
-import { FaCouch } from "react-icons/fa";
-import { FaDoorOpen } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 import TypologyDetailsPanel from './TypologyDetailsPanel';
 import Button from './Button';
+import { Link } from "react-router-dom";
+
 
 const TypologyDetails = ({ details, onClose }: { details: any; onClose: () => void }) => {
     return (
@@ -27,39 +25,13 @@ const TypologyDetails = ({ details, onClose }: { details: any; onClose: () => vo
                         <div className="mb-6">
                             <h1 className="text-4xl font-bold">{details.label}</h1>
                         </div>
-                        <div className="w-[60%]">
+                        <div className="w-full md:w-[60%]">
                             <TypologyDetailsPanel typology={details} />
                         </div>
                         <div className="mt-8">
-                            <div className="flex items-center space-x-2">
-                                <MdBed size={24} />
-                                <span>{details.details.bedrooms} {details.details.bedrooms > 1 ? 'récamaras' : 'récamara'}</span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                                <FaBath size={24} />
-                                <span>{details.details.bathrooms} {details.details.bathrooms > 1 ? 'Baños' : 'Baño'}</span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                                <GiCookingPot size={24} />
-                                <span>
-                                    {details.details.kitchenettes > 1
-                                        ? `${details.details.kitchenettes} Cocinetas`
-                                        : 'Cocineta'}
-                                </span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                                <FaCouch size={24} />
-                                <span>Sala/Comedor</span>
-                            </div>
-                            {details.details.lockOff !== undefined && (
-                                <div className="flex items-center space-x-2">
-                                    <FaDoorOpen size={24} />
-                                    <span>Lock off</span>
-                                </div>
-                            )}
-                        </div>
-                        <div className="mt-8">
-                            <Button>Solicitar información</Button>
+                            <Link to="/contact">
+                                <Button>Solicitar información</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
