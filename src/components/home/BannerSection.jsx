@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import photo from "../../Assets/banner-hero-section.jpg";
+import Button from "../Button";
 
 function BannerSection() {
   const texts = [
@@ -35,6 +36,15 @@ function BannerSection() {
               <h2 className="md:text-5xl sm:text-4xl text-md font-bold">
                 {texts[currentTextIndex]}
               </h2>
+                <div className="mt-[20px] text-center sm:text-left">
+                  <a
+                    href="https://arenitower.com/BrochureAreniTowerAsesores.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button>Descargar Brochure</Button>
+                  </a>
+              </div>
             </div>
           </div>
         </div>
