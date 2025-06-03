@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { projectsData } from "../../data/data";
+import { homeCarouselData } from "../../data/data";
 import { MdArrowForwardIos } from "react-icons/md";
 import { MdArrowBackIosNew } from "react-icons/md";
 
@@ -11,14 +11,14 @@ function HeroSection() {
 
   const showNextImage = () => {
     setImageIndex((index) => {
-      if (index === projectsData.length - 1) return 0;
+      if (index === homeCarouselData.length - 1) return 0;
       return index + 1;
     });
   };
 
   const showPrevImage = () => {
     setImageIndex((index) => {
-      if (index === 0) return projectsData.length - 1;
+      if (index === 0) return homeCarouselData.length - 1;
       return index - 1;
     });
   };
@@ -27,7 +27,7 @@ function HeroSection() {
     <div
       className="bg-cover min-h-screen text-white relative"
       style={{
-        backgroundImage: `url(${projectsData[imageIndex].image})`,
+        backgroundImage: `url(${homeCarouselData[imageIndex].image})`,
         backgroundPosition: "60%",
       }}>
       <div className="absolute left-0 top-0 w-full h-full bg-[#00000080]"></div>
@@ -39,10 +39,10 @@ function HeroSection() {
               className="text-center h-full flex items-center justify-center flex-col
                w-[80%] mx-auto p-[20px] uppercase relative md:gap-[20px] gap-[10px]">
               <p className="sm:text-base text-xs">
-                {projectsData[imageIndex].description}
+                {homeCarouselData[imageIndex].description}
               </p>
               <h2 className="md:text-7xl sm:text-4xl text-lg  font-bold">
-                {projectsData[imageIndex].title}
+                {homeCarouselData[imageIndex].title}
               </h2>
               <div>
                 <Link to={"/projects"}>

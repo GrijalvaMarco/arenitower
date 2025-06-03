@@ -1,5 +1,5 @@
-import image1 from "../Assets/villa.jpg";
-import image2 from "../Assets/Apartment.jpg";
+import image1 from "../Assets/home-carousel1.jpeg";
+import image2 from "../Assets/home-carousel2.jpeg";
 import image3 from "../Assets/hotel-apartment.jpg";
 import image4 from "../Assets/commercial-1.jpg";
 import image5 from "../Assets/administrative.jpg";
@@ -68,12 +68,41 @@ import newCairo3 from "../Assets/newCairo3.jpg";
 import newCairo4 from "../Assets/newCairo4.jpeg";
 import newCairo5 from "../Assets/newCairo5.jpeg";
 
+import typologyImage1 from '../Assets/typology-102.jpg';
+import typologyImage2 from '../Assets/typology-101.jpg';
+import typologyImage3 from '../Assets/typology-103.jpg';
+import floorPlanImage1 from '../Assets/floorplan-1.png';
+import floorPlanImage2 from '../Assets/floorplan-2.png';
+import floorPlanImage3 from '../Assets/floorplan-3.png';
+import floorPlanImage4 from '../Assets/floorplan-4.png';
+import floorPlanImage5 from '../Assets/floorplan-5.png';
+import floorPlanImage6 from '../Assets/floorplan-6.png';
+import floorPlanImage7 from '../Assets/floorplan-7.png';
+import floorPlanImage8 from '../Assets/floorplan-8.png';
+
 import {
   FaFacebookSquare,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+
+export const homeCarouselData = [
+  {
+    id: 1,
+    title: "Amenidades de lujo y flexibilidad para rentar o disfrutar",
+    description: "Villa",
+    image: image1,
+    to: "/projects/villa",
+  },
+  {
+    id: 2,
+    title: "Solo 22 departamentos. ¿Serás parte de la exclusividad?",
+    description: "Apartment",
+    image: image2,
+    to: "/projects/apartment",
+  },
+];
 
 export const projectsData = [
   {
@@ -139,7 +168,7 @@ export const projectsData = [
 export const headerData = [
   { id: 1, title: "Inicio", to: "/" },
   { id: 2, title: "Nosotros", to: "/about" },
-  { id: 3, title: "Tipología", to: "/projects" },
+  { id: 3, title: "Tipologías", to: "/typologies" },
   { id: 4, title: "Tour Virtual", to: "/virtual-tours" },
   { id: 5, title: "Contacto", to: "/contact" },
 ];
@@ -147,53 +176,64 @@ export const headerData = [
 export const clientTestimonialsData = [
   {
     id: 1,
-    number: "8000",
+    number: "",
     title: "Clients",
     description:
-      "Proudly serving a huge number of satisfied clients from different nationalities",
+      "Departamentos con lock-off: tu refugio personal y tu mejor inversión",
   },
 
   {
     id: 2,
-    number: "350",
+    number: "",
     title: "Projects",
     description:
-      "Consultancy in many real estate projects of all types all over Egypt",
+      "Rentabilidad garantizada con el modelo lock-off de Areni Tower",
   },
 
   {
     id: 3,
-    number: "6",
+    number: "",
     title: "Years",
     description:
-      "Profound knowledge and extensive experience throughout the years in real estate field",
+      "Edición limitada en la zona cotizada de Puerto Vallarta",
+  },
+];
+
+export const availabilityBannerData = [
+  {
+    id: 1,
+    number: "",
+    title: "Clients",
+    description:
+      "Amenidades de lujo y flexibilidad para rentar o disfrutar",
+  },
+  {
+    id: 2,
+    number: "",
+    title: "Projects",
+    description:
+      "Solo 22 departamentos. ¿Serás parte de la exclusividad?",
   },
 ];
 
 export const aboutUsData = [
   {
     id: 1,
-    title: "Experience",
+    title: "Exclusividad",
     image: experienceIcon,
-    description:
-      "Based on our extensive experience and resources, we provide sincere consultancy you can depend on to help you with your investment and property buying decisions.",
     bgColor: "#173329",
   },
   {
     id: 2,
-    title: "Trust",
+    title: "Flexibilidad Inteligente (Lock-Off)",
     image: trustIcon,
-    description:
-      "We have built a reputation through meaningful communication and honesty with our clients. We are trusted to fulfill promises and take care of our clients’ concerns.",
     bgColor: "#8DA59D",
   },
 
   {
     id: 3,
-    title: "Variety",
+    title: "Conexión Emocional con Puerto Vallarta",
     image: varietyIcon,
-    description:
-      "We specialize in various projects that offer all types of units such as apartments, penthouses, villas, commercial, administrative, and medical units.",
     bgColor: "#173329",
   },
 ];
@@ -210,34 +250,34 @@ export const formData = [
     id: 1,
     name: "firstName",
     type: "text",
-    placeholder: "First Name",
+    placeholder: "Nombre",
   },
   {
     id: 2,
     name: "lastName",
     type: "text",
-    placeholder: "Last Name",
+    placeholder: "Apellido",
   },
 
   {
     id: 3,
     name: "phone",
     type: "number",
-    placeholder: "Your Phone",
+    placeholder: "Celular",
   },
 
   {
     id: 4,
     name: "email",
     type: "email",
-    placeholder: "Your Email (optional)",
+    placeholder: "Email",
   },
 ];
 
 export const contactInfoData = [
-  { id: 1, title: "+20 1151747091", image: phone },
-  { id: 2, title: "mustafakhaledinfo@gmail.com", image: email },
-  { id: 3, title: "Cairo, Egypt", image: location },
+  { id: 1, title: "+52 3337275115", image: phone },
+  { id: 2, title: "ventas@arenitower.com", image: email },
+  { id: 3, title: "Guadalajara, Jalisco", image: location },
 ];
 
 export const villaData = [
@@ -616,89 +656,270 @@ export const newCairoData = [
   },
 ];
 
+export const typologyDataByLevel = [
+  {
+    typologyId: 1,
+    type: "N1",
+    name: "101",
+  },
+  {
+    typologyId: 2,
+    type: "N1",
+    name: "102",
+  },
+  {
+    typologyId: 3,
+    type: "N2",
+    name: "201",
+  },
+  {
+    typologyId: 4,
+    type: "N2",
+    name: "202",
+  },
+  {
+    typologyId: 6,
+    type: "N2",
+    name: "203",
+  },
+  {
+    typologyId: 5,
+    type: "N3",
+    name: "301",
+  },
+  {
+    typologyId: 4,
+    type: "N3",
+    name: "302",
+  },
+  {
+    typologyId: 6,
+    type: "N3",
+    name: "303",
+  },
+  {
+    typologyId: 5,
+    type: "N4",
+    name: "401",
+  },
+  {
+    typologyId: 4,
+    type: "N4",
+    name: "402",
+  },
+  {
+    typologyId: 6,
+    type: "N4",
+    name: "403",
+  },
+  {
+    typologyId: 5,
+    type: "N5",
+    name: "501",
+  },
+  {
+    typologyId: 4,
+    type: "N5",
+    name: "502",
+  },
+  {
+    typologyId: 6,
+    type: "N5",
+    name: "503",
+  },
+  {
+    typologyId: 5,
+    type: "N6",
+    name: "601",
+  },
+  {
+    typologyId: 4,
+    type: "N6",
+    name: "602",
+  },
+  {
+    typologyId: 6,
+    type: "N6",
+    name: "603",
+  },
+  {
+    typologyId: 5,
+    type: "N7",
+    name: "701",
+  },
+  {
+    typologyId: 4,
+    type: "N7",
+    name: "702",
+  },
+  {
+    typologyId: 6,
+    type: "N7",
+    name: "703",
+  },
+  {
+    typologyId: 7,
+    type: "N8",
+    name: "801",
+  },
+  {
+    typologyId: 8,
+    type: "N8",
+    name: "802",
+  },
+]
+
 export const tipologyData = [
   {
-    name: "Modelo A1",
-    shortName: "A1",
-    type: "A",
-    image: "",
-    area: 50,
+    id: 1,
+    name: "102",
+    shortName: "ESTUDIO A NIVEL DE LOBBY",
+    label: "ESTUDIO A NIVEL DE LOBBY 34.13 M2",
+    type: "N1",
+    image: typologyImage1,
+    floorPlanImage: floorPlanImage1,
+    area: 34.13,
     distributionArea: {
       privateArea: 100,
       coveredTerrace: 6,
       storage: 6,
     },
-    specifications: ["1 Recámaras", "1 Baño", "2 Cajones de estacionamiento", "Sala de TV"],
+    specifications: ["1 Recámara", "1 Baño", "Cocineta", "Sala / Comedor"],
     virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+    details: { bedrooms: 1, bathrooms: 1, kitchenettes: 1 },
+    quantity: 1,
   },
   {
-    name: "Modelo C1",
-    shortName: "C1",
-    type: "B",
-    image: "",
-    area: 70,
+    id: 2,
+    name: "101",
+    shortName: "ESTUDIO A NIVEL DE LOBBY",
+    label: "ESTUDIO A NIVEL DE LOBBY 74.9 M2", 
+    type: "N1",
+    image: typologyImage2,
+    floorPlanImage: floorPlanImage2,
+    area: 74.9,
     distributionArea: {
       privateArea: 100,
       coveredTerrace: 6,
       storage: 6,
     },
-    specifications: ["2 Recámaras", "2 Baños", "2 Cajones de estacionamiento", "Sala de TV"],
+    specifications: ["2 Recámaras", "1 Baño", "Cocineta", "Sala / Comedor"],
     virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+    details: { bedrooms: 2, bathrooms: 1, kitchenettes: 1 },
+    quantity: 1,
   },
   {
-    name: "Modelo F1",
-    shortName: "F1",
-    type: "B",
-    image: "",
-    area: 80,
+    id: 3,
+    name: "201",
+    shortName: "DEPARTAMENTO",
+    label: "DEPARTAMENTO DE 68.86 M2",
+    type: "N2",
+    image: typologyImage3,
+    floorPlanImage: floorPlanImage3,
+    area: 68.86,
     distributionArea: {
       privateArea: 100,
       coveredTerrace: 6,
       storage: 6,
     },
-    specifications: ["3 Recámaras", "2.5 Baños", "2 Cajones de estacionamiento", "Sala de TV"],
+    specifications: ["2 Recámaras", "1 Baño", "Cocineta", "Sala / Comedor"],
     virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+    details: { bedrooms: 2, bathrooms: 1, kitchenettes: 1 },
+    quantity: 1,
   },
   {
-    name: "Modelo H2",
-    shortName: "H2",
-    type: "C",
-    image: "",
-    area: 100,
+    id: 4,
+    name: "202",
+    shortName: "DEPARTAMENTO",
+    label: "DEPARTAMENTO DE 84.69 M2",
+    type: "N2",
+    image: typologyImage1,
+    floorPlanImage: floorPlanImage4,
+    area: 84.69,
     distributionArea: {
       privateArea: 100,
       coveredTerrace: 6,
       storage: 6,
     },
-    specifications: ["3 Recámaras", "2.5 Baños", "2 Cajones de estacionamiento", "Sala de TV"],
+    specifications: ["2 Recámaras", "2 Baños", "2 Cocinetas", "Sala / Comedor", "Lock Off"],
     virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+    details: { bedrooms: 2, bathrooms: 2, lockOff: 1, kitchenettes: 2 },
+    quantity: 6,
   },
   {
-    name: "Modelo L2",
-    shortName: "L2",
-    type: "C",
-    image: "",
-    area: 120,
+    id: 5,
+    name: "301",
+    shortName: "DEPARTAMENTO",
+    label: "DEPARTAMENTO DE 96.17 M2",
+    type: "N3",
+    image: typologyImage2,
+    floorPlanImage: floorPlanImage5,
+    area: 96.17,
     distributionArea: {
       privateArea: 100,
       coveredTerrace: 6,
       storage: 6,
     },
-    specifications: ["4 Recámaras"],
+    specifications: ["3 Recámaras", "2 Baños", "2 Cocinetas", "Sala / Comedor", "Lock Off"],
     virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+    details: { bedrooms: 3, bathrooms: 2, lockOff: 1, kitchenettes: 2 },
+    quantity: 5,
   },
   {
-    name: "Modelo Q2",
-    shortName: "Q2",
-    type: "C",
-    image: "",
-    area: 140,
+    id: 6,
+    name: "203",
+    shortName: "DEPARTAMENTO",
+    label: "DEPARTAMENTO DE 105.05 M2",
+    type: "N2",
+    image: typologyImage3,
+    floorPlanImage: floorPlanImage6,
+    area: 105.05,
     distributionArea: {
       privateArea: 100,
       coveredTerrace: 6,
       storage: 6,
     },
-    specifications: ["4 Recámaras"],
+    specifications: ["3 Recámaras", "2 Baños", "2 Cocinetas", "Sala / Comedor", "Lock Off"],
     virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
-  }
+    details: { bedrooms: 3, bathrooms: 2, lockOff: 1, kitchenettes: 2 },
+    quantity: 6,
+  },
+  {
+    id: 7,
+    name: "801",
+    shortName: "DEPARTAMENTO",
+    label: "DEPARTAMENTO DE 139.15 M2",
+    type: "N8",
+    image: typologyImage1,
+    floorPlanImage: floorPlanImage7,
+    area: 139.15,
+    distributionArea: {
+      privateArea: 100,
+      coveredTerrace: 6,
+      storage: 6,
+    },
+    specifications: ["3 Recámaras", "3 Baños", "2 Cocinetas", "Sala / Comedor", "Lock Off"],
+    virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+    details: { bedrooms: 3, bathrooms: 3, lockOff: 1, kitchenettes: 2 },
+    quantity: 1,
+  },
+  {
+    id: 8,
+    name: "802",
+    shortName: "DEPARTAMENTO",
+    label: "DEPARTAMENTO DE 148.06 M2",
+    type: "N8",
+    image: typologyImage2,
+    floorPlanImage: floorPlanImage8,
+    area: 148.06,
+    distributionArea: {
+      privateArea: 100,
+      coveredTerrace: 6,
+      storage: 6,
+    },
+    specifications: ["3 Recámaras", "2 Baños", "2 Cocinetas", "Sala / Comedor", "Lock Off"],
+    virtualTourUrl: "https://kuula.co/share/5RMdy?fs=0&vr=0&priority=1&autorotate=0.2&thumbs=-1&hideinst=1&chromeless=1&logo=-1&feature=1",
+    details: { bedrooms: 3, bathrooms: 3, lockOff: 1, kitchenettes: 2 },
+    quantity: 1,
+  },
 ];

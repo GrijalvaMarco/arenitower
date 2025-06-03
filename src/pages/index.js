@@ -5,3 +5,4 @@ export { default as Contact } from "./Contact";
 export { default as NotFound } from "./NotFound";
 export { default as Single } from "./Single";
 export { default as VirtualTours } from "./VirtualTours";
+export { default as Typologies } from "./Typologies";

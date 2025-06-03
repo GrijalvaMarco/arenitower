@@ -1,9 +1,11 @@
 import VirtualToursSection from "../components/virtualTour/VirtualToursSection";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 function VirtualTours() {
   return (
     <div>
-			<VirtualToursSection />
+      <VirtualToursSection />
+      <WhatsAppButton />
     </div>
   );
 }

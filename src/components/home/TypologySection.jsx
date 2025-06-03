@@ -1,26 +1,30 @@
 import { useState } from "react";
-import { tipologyData } from "../../data/data";
+import { tipologyData, typologyDataByLevel } from "../../data/data";
 import TypologyDetails from "./TypologyDetails";
 
 function TipologySection() {
-    const [selectedTipology, setSelectedTipology] = useState(null);
+    // Estado para almacenar la tipología seleccionada (objeto completo de tipologyData)
+    const [selectedTipology, setSelectedTipology] = useState(tipologyData[0]);
 
-    const tipologyGroups = tipologyData.reduce((acc, tipology) => {
-        if (acc[tipology.type]) {
-            acc[tipology.type].push(tipology);
+    // Agrupamos los datos por tipo (N1, N2, etc.)
+    const typeGroups = typologyDataByLevel.reduce((acc, typology) => {
+        if (acc[typology.type]) {
+            acc[typology.type].push(typology);
         } else {
-            acc[tipology.type] = [tipology];
+            acc[typology.type] = [typology];
         }
         return acc;
     }, {});
 
+    // Estado para controlar qué grupos están colapsados
     const [collapsedTypes, setCollapsedTypes] = useState(
-        Object.keys(tipologyGroups).reduce((acc, type) => {
+        Object.keys(typeGroups).reduce((acc, type) => {
             acc[type] = true;
             return acc;
         }, {})
     );
 
+    // Función para alternar el estado de colapso de un grupo
     const toggleCollapse = (type) => {
         console.log('Type: ', type);
         setCollapsedTypes((prev) => {
@@ -32,22 +36,28 @@ function TipologySection() {
         });
     };
 
+    // Función para seleccionar una tipología y buscar sus detalles completos
+    const handleSelectTypology = (typologyItem) => {
+        // Buscar los detalles completos en tipologyData usando el typologyId
+        const fullTypologyDetails = tipologyData.find(item => item.id === typologyItem.typologyId);
+        if (fullTypologyDetails) {
+            setSelectedTipology(fullTypologyDetails);
+        }
+    };
+
     return (
-        <div className="tipology-section bg-primary text-white py-[40px]">
-            <h1
-                className={`relative mb-[20px] py-[15px] text-center sm:text-5xl text-3xl uppercase font-bold`}>
-                Tipología
-            </h1>
+        <div className="tipology-section bg-secondary text-white py-[40px]">
             <div className="container mx-auto">
-            <div className="grid grid-cols-12 gap-4">
-                <div className="col-span-2">
+                <div className="grid grid-cols-12 gap-4">
+                    {/* Sidebar para los grupos de tipologías */}
+                    <div className="col-span-12 sm:col-span-4 lg:col-span-2">
                         {
-                            Object.keys(tipologyGroups).map((type) => {
+                            Object.keys(typeGroups).map((type) => {
                                 const isCollapsed = collapsedTypes[type];
                                 return (
-                                    <div key={type} className="mb-[20px] mt-[10px]">
+                                    <div key={type} className="mb-[20px] mt-[10px] pl-[20px]">
                                         <h2
-                                            className="text-3xl font-bold cursor-pointer"
+                                            className="text-2xl sm:text-3xl font-bold cursor-pointer"
                                             onClick={() => toggleCollapse(type)}
                                         >
                                             {type}
@@ -55,14 +65,14 @@ function TipologySection() {
                                         {!isCollapsed && (
                                             <ul>
                                                 {
-                                                    tipologyGroups[type].map((tipology) => {
+                                                    typeGroups[type].map((typology) => {
                                                         return (
                                                             <li
-                                                                key={tipology.name}
+                                                                key={typology.name}
                                                                 className="cursor-pointer p-[5px] border border-secondary text-center hover:bg-secondary hover:text-primary"
-                                                                onClick={() => setSelectedTipology(tipology)}
+                                                                onClick={() => handleSelectTypology(typology)}
                                                             >
-                                                                {tipology.name}
+                                                                {typology.name}
                                                             </li>
                                                         );
                                                     })
@@ -74,25 +84,29 @@ function TipologySection() {
                             })
                         }
                     </div>
-                    <div className="col-span-6">
+                    {/* Sección de imagen */}
+                    <div className="col-span-12 sm:col-span-8 lg:col-span-6">
                         {
                             selectedTipology ? (
                                 <img
-                                    src={selectedTipology.image}
+                                    src={selectedTipology.floorPlanImage}
                                     alt={selectedTipology.name}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover p-4"
                                 />
                             ) : (
-                                <p>Selecciona una tipología para ver la imagen</p>
+                                <p className="text-center">Selecciona una tipología para ver la imagen</p>
                             )
                         }
                     </div>
-                    <div className="col-span-4">
-                            {selectedTipology ? (
+                    {/* Sección de detalles */}
+                    <div className="col-span-12 sm:col-span-12 lg:col-span-4">
+                        {
+                            selectedTipology ? (
                                 <TypologyDetails tipology={selectedTipology} />
                             ) : (
-                                <p>Selecciona una tipología para ver los detalles</p>
-                            )}
+                                <p className="text-center">Selecciona una tipología para ver los detalles</p>
+                            )
+                        }
                     </div>
                 </div>
             </div>

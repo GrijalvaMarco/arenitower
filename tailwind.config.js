@@ -9,6 +9,7 @@ export default {
         secondary: "#8DA59D",
         gray: "rgba(255, 255, 255, 0.75)",
         lightGray: "#173329",
+        accentColor: "#dcac36",
       },
     },
   },

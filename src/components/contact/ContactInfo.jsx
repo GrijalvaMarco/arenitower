@@ -4,7 +4,7 @@ import Container from "../Container";
 function ContactInfo() {
   return (
     <Container>
-      <div className="flex lg:flex-row flex-col justify-between lg:gap-[10px] gap-[20px]">
+      <div className="flex lg:flex-row flex-col justify-between lg:gap-[10px] gap-[20px] mt-[30px]">
         {contactInfoData.map((el) => {
           return (
             <div key={el.id} className="flex items-center gap-[10px] ">

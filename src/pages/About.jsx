@@ -1,15 +1,17 @@
 import AboutUs from "../components/AboutUs";
-import ClientTestimonials from "../components/ClientTestimonials";
 import WhoWeAre from "../components/about/WhoWeAre";
-import HeroSection from "../components/heroSection/HeroSection";
+import AboutHeroSection from "../components/about/AboutHeroSection"; // Updated import
+import WhatsAppButton from "../components/WhatsAppButton";
+import OurValues from "../components/about/OurValues";
 
 function About() {
   return (
     <div>
-      <HeroSection page={"About"} />
+      <AboutHeroSection /> {/* Updated component */}
       <WhoWeAre />
-      <ClientTestimonials />
+      <OurValues />
       <AboutUs />
+      <WhatsAppButton />
     </div>
   );
 }

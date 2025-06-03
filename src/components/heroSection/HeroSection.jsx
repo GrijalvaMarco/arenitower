@@ -1,4 +1,4 @@
-import photo from "../../Assets/heroSection.jpg";
+import photo from "../../Assets/villa4.jpeg";
 import styles from "./HeroSection.module.css";
 
 function HeroSection({ image, page }) {

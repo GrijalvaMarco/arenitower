@@ -1,33 +1,46 @@
-import { projectsData } from "../../data/data";
+import { useState, useEffect } from "react";
+import photo from "../../Assets/banner-hero-section.jpg";
 
 function BannerSection() {
-    return (
-        <div
-          className="bg-cover min-h-screen text-white relative"
-          style={{
-            backgroundImage: `url(${projectsData[1].image})`,
-            backgroundPosition: "60%",
-          }}>
-          <div className="absolute left-0 top-0 w-full h-full bg-[#00000080]"></div>
-          <section className="h-[calc(100vh-80px)] ">
-            <div className="container mx-auto px-[10px]">
-              <div className="relative h-[100vh] w-full">
-                {/* Content */}
-                <div
-                  className="text-center h-full flex items-center justify-center flex-col
+  const texts = [
+    "Diseño para habitarlo, flexibilidad para rentarlo",
+    "Departamentos con lock-off: tu refugio personal y tu mejor inversión",
+    "Rentabilidad garantizada con el modelo lock-off de Areni Tower",
+    "Edición limitada en la zona cotizada de Puerto Vallarta",
+  ];
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div
+      className="bg-cover min-h-screen text-white relative"
+      style={{
+        backgroundImage: `url(${photo})`,
+        backgroundPosition: "60%",
+      }}>
+      <div className="absolute left-0 top-0 w-full h-full bg-[#00000080]"></div>
+      <section className="h-[calc(100vh-80px)] ">
+        <div className="container mx-auto px-[10px]">
+          <div className="relative h-[100vh] w-full">
+            {/* Content */}
+            <div
+              className="text-center h-full flex items-center justify-center flex-col
                    w-[80%] mx-auto p-[20px] uppercase relative md:gap-[20px] gap-[10px]">
-                    <h2 className="md:text-6xl sm:text-4xl text-lg  font-bold">
-                        LAS MEJORES VISTAS PERTENECEN A TU HOGAR
-                    </h2>
-                  <p className="sm:text-base text-xs">
-                    Departamentos en Preventa desde $6.4 MDP.  Opciones de 1, 2 y 3 recámaras en Providencia, Guadalajara.
-                  </p>
-                </div>
-              </div>
+              <h2 className="md:text-5xl sm:text-4xl text-md font-bold">
+                {texts[currentTextIndex]}
+              </h2>
             </div>
-          </section>
+          </div>
         </div>
-      );
+      </section>
+    </div>
+  );
 }
 
 export default BannerSection;
