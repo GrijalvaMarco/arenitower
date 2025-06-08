@@ -36,7 +36,8 @@ function Footer() {
                   return (
                     <Link
                       key={el.id}
-                      // to={"https://www.linkedin.com/in/the-mustafa-khaled/"}
+                      to={el.to}
+                      rel="noopener noreferrer"
                       target="_blank">
                       <Icon className="text-2xl hover:text-primary" />
                     </Link>
@@ -58,7 +59,7 @@ function Footer() {
       <div className="bg-lightGray text-gray py-[30px]">
         <Container>
           <p className="sm:text-base text-sm">
-            © {currentYear} New Capital. All Rights Reserved.
+            © {currentYear} Areni Tower All Rights Reserved.
           </p>
         </Container>
       </div>

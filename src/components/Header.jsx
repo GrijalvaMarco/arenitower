@@ -46,7 +46,7 @@ function Header() {
       <div className="container relative mx-auto px-[20px] flex items-center justify-between">
         <div>
           <Link to={"/"}>
-            <img src={logo} alt="new capital logo" className="w-[80px]" />
+            <img src={logo} alt="arenitower logo" className="w-[80px]" />
           </Link>
         </div>
         <ul

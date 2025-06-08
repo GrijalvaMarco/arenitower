@@ -239,10 +239,8 @@ export const aboutUsData = [
 ];
 
 export const footerIcons = [
-  { id: 1, icon: FaFacebookSquare },
-  { id: 2, icon: FaInstagram },
-  { id: 3, icon: FaLinkedin },
-  { id: 4, icon: FaTwitter },
+  { id: 1, icon: FaFacebookSquare, to: "https://www.facebook.com/profile.php?id=61576298352608" },
+  { id: 2, icon: FaInstagram, to: "https://www.instagram.com/areni_tower/" }
 ];
 
 export const formData = [
